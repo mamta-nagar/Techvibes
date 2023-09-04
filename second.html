@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Certificate Gallery</title>
+    <link rel="stylesheet" href="second.css">
+
+</head>
+
+<body>
+    
+
+    <div class="img-gallery">
+    
+        <img src="images/i2211.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i2000.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1900.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1800.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1611.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1608a.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1608.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1604.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1602.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1510.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1508a.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1504.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1312.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1003.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1002.jpg" alt="not visible" class="full-img" onclick="openFullImg(this)">
+        <img src="images/i1001.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i0812.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i2010a.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i12th.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i10th.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i9th.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i8th.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i7th.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i6th.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i4th.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i3rd.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        <img src="images/i2nd.jpg" alt="not visible" class="full-img" onclick= "openFullImg(this)">
+        
+
+
+
+    </div>
+    <div class="button-containe">
+    <button  class="responsive-button" onclick="backpage()">Move to the Back Page</button>
+    <button  class="responsive-button" onclick="logout()">Have a nice day! LogOut</button>
+    </div>  
+<script>
+     alert(" Only One Click !!")
+        
+    function openFullImg(image) {
+       
+    var isEnlarged = image.classList.contains("enlarged");
+
+    // Remove 'enlarged' class from all images
+    var allImages = document.querySelectorAll(".full-img");
+    allImages.forEach(function (img) {
+        img.classList.remove("enlarged");
+        img.style.transform = ""; 
+    });
+
+    
+    if (!isEnlarged) {
+        image.classList.add("enlarged");
+        image.style.transform = "scale(1.2)"; 
+    }
+}
+
+function logout() {
+            window.location.href = "logout.php"; 
+        }
+function backpage(){
+    window.location.href ="first.php";
+}         
+    
+</script>
+
+</body>
+</html>
