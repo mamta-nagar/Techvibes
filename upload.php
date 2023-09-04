@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 session_start();
-$adminUsername = 'mamta00';
+$adminUsername = 'yourrrrrrrrrrrrrr usernameeeeeeeeeeeeeeeee';
 if (!isset($_SESSION['username']) || $_SESSION['username'] !== $adminUsername) {
     echo "<script>alert('You are not authorized to upload images.');
     window.location.href='first.php';</script>";
